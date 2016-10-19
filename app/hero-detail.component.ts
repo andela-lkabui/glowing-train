@@ -17,6 +17,7 @@ import { HeroService } from './hero.service';
         <input [(ngModel)]="hero.name" placeholder="name"/>
       </div>
     </div>
+    <button (click)="goBack()">Back</button>
   `
 })
 export class HeroDetailComponent implements OnInit {
@@ -34,5 +35,9 @@ export class HeroDetailComponent implements OnInit {
       let id = +params['id'];
       this.heroService.getHero(id).then(hero => this.hero = hero);
     });
+  }
+
+  goBack(): void {
+    this.location.back();
   }
 }
