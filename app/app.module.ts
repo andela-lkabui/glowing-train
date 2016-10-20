@@ -28,7 +28,7 @@ import { DashboardComponent } from './dashboard.component';
         pathMatch: 'full'
       },
       {
-        path: '/detail/:id',
+        path: 'detail/:id',
         component: HeroDetailComponent
       }
     ])
