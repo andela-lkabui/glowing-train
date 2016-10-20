@@ -8,11 +8,14 @@ import { DashboardComponent } from './dashboard.component';
 import { HeroDetailComponent } from './hero-detail.component';
 import { HeroesComponent } from './heroes.component';
 
+import { AppRoutingModule } from './app-routing.module';
+
 
 @NgModule({
   imports:      [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   declarations: [
     AppComponent,
