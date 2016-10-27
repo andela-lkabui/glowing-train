@@ -13,6 +13,7 @@ import { HeroDetailComponent } from './hero-detail.component';
 import { HeroesComponent } from './heroes.component';
 
 import { AppRoutingModule } from './app-routing.module';
+import './rxjs-extensions';
 
 
 @NgModule({
